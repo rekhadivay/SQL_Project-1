@@ -1,6 +1,7 @@
 What issues will you address by cleaning the data?
+### Issues while Data cleaning process---
 While working with data i found many issues. There were many Null Values, Duplicate data, Inconsistent Data,outliers, Normalization issues etc.Understanding the context of your data is crucial. Sometimes, what appears to be a duplicate,null value or outliers might actually hold essential contextual information. Removing them can lead to misinterpretations.
-Duplicate and null records can lead to inaccurate results and skewed statistics but removing them also can lead to a loss of potentially valuable information. 
+ Duplicate and null records can lead to inaccurate results and skewed statistics but removing them also can lead to a loss of potentially valuable information. 
 In some cases, they might carry unique identifiers that are significant for analysis. maintaining duplicates or null values may be necessary to preserve the original data's size and structure. 
 Deleting them could result in a dataset that no longer accurately represents the real-world situation.Aggressive data cleaning can involve data manipulation, loss of Context which may not accurately represent the original dataset.  Removing outliers, duplicates, or null values without proper analysis can lead to an incomplete dataset, potentially eliminating critical insights.
 i also had many issues while removing nulls , removing duplicates in data cleaning process because removing all nulls can harm to data size. 
