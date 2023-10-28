@@ -5,6 +5,9 @@ While working with data i found many issues. There were many Null Values, Duplic
 In some cases, they might carry unique identifiers that are significant for analysis. maintaining duplicates or null values may be necessary to preserve the original data's size and structure. 
 Deleting them could result in a dataset that no longer accurately represents the real-world situation.Aggressive data cleaning can involve data manipulation, loss of Context which may not accurately represent the original dataset.  Removing outliers, duplicates, or null values without proper analysis can lead to an incomplete dataset, potentially eliminating critical insights.
 i also had many issues while removing nulls , removing duplicates in data cleaning process because removing all nulls can harm to data size. 
+### Note--
+i did not remove nulls from the original table(all_sessions).so i created new table named unique_all_sessions2, where i added altered columns with distinct values and not null values.
+Because removing nulls may affect the results of SQL queries and reports.Null values can be used to maintain data integrity.Removing null values may result in the loss of valuable data, especially if those nulls represent missing or unknown information. 
  
 
 
@@ -24,8 +27,14 @@ Another--
 FROM all_sessions2
  WHERE totaltransactionrevenue IS NULL;
 ```
-
-  i did not remove nulls because removing nulls may affect the results of SQL queries and reports.Null values can be used to maintain data integrity.Removing null values may result in the loss of valuable data, especially if those nulls represent missing or unknown information.
+### --Created new column with not nulls in new table.
+```sql
+UPDATE unique_all_sessions2
+SET total_transaction_revenue = all_sessions2.totaltransactionrevenue 
+FROM all_sessions2
+WHERE  all_sessions2.totaltransactionrevenue IS NOT NULL;
+```
+ 
   
   
 ### 2.Remove duplicates---  
