@@ -77,7 +77,17 @@ SET new_date = TO_CHAR(TO_DATE(cast(date as text), 'YYYYMMDD'), 'YYYY-MM-DD');
 alter table all_sessions2
 drop column date
 ```
+For Analytics2--
+```sql
+ALTER TABLE analytics2
+ADD COLUMN new_date varchar;
 
+UPDATE analytics2
+SET new_date = TO_CHAR(TO_DATE(cast(date as text), 'YYYYMMDD'), 'YYYY-MM-DD');
+
+alter table analytics2
+drop column date
+```
 ### 6. To change productprice column format, the SQL query i used--
 
 ```sql
