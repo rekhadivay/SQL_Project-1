@@ -43,7 +43,7 @@ Answer:
 
 
 **Question 3: Is there any pattern in the types (product categories) of products ordered from visitors in each city and country?**
-
+### -The Pattern i obeserved in this output is that the product type count is of same number for each city and country.
 
 SQL Queries:
 ```sql
