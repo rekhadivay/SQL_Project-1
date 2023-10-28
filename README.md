@@ -30,3 +30,6 @@ Analyzing the "date" and "time" columns reveal patterns and trends over time. Fo
 i faced many challenges because the data we have been provided was very messy. lots of nulls values, duplicates, leading whitespace etc.The data has missing or unclear information ("(not set)"). Dealing with messy data can be like trying to solve a puzzle with missing pieces.To get answers, i needed to change how the data looks for example, date,time format, data type, unitprice formatting.There's a lot of data in Analytics table, it slow down my computer.
 ## Future Goals
 if i would have more time, i would throughly clean the data for better understanding and deeper analysis.Dive deeper into user behavior analysis to optimize website features,product categories, content, and design for improved user experiences.
+
+![schema](https://github.com/rekhadivay/SQL_Project-1/assets/116858892/d163aa88-c2f2-4281-829a-c1b47e1c8f53)
+
